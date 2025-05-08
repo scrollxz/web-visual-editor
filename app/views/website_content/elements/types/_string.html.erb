@@ -1,0 +1,9 @@
+<div class="hover:cursor-grabbing absolute"
+     data-controller="elements--interact"
+     data-elements--interact-target="element"
+     data-elements--interact-element-id-value="<%= element.id %>"
+     data-elements--interact-website-id-value="<%= element.website.id %>"
+     data-elements--interact-element-object-value="<%= element.attributes.to_json %>"
+     style="top: <%= element.y %>px; left: <%= element.x %>px">
+  <span>Text</span>
+</div>

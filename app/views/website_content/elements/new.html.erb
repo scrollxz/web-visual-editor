@@ -1,0 +1,5 @@
+<%= render TurboModalComponent.new(title: '') do %>
+  <%= simple_form_for @element, url: website_elements_path(@website) do |f| %>
+    <%= render 'form', f: f %>
+  <% end %>
+<% end %>

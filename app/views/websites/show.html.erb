@@ -1,0 +1,7 @@
+<%= link_to 'new element', new_website_element_path(@website), data: { turbo: true, turbo_frame: 'modal'}, class: 'absolute right-5 z-50' %>
+
+<div class="min-w-screen min-h-screen relative">
+  <% @website.elements.each do |element| %>
+    <%= render "website_content/elements/types/#{element.element_type}", element: element %>
+  <% end %>
+</div>
